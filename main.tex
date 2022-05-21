@@ -2,12 +2,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Packages
 \documentclass[10pt, a4paper]{article}
-\usepackage[top=3cm, bottom=4cm, left=3.5cm, right=3.5cm]{geometry}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
 \usepackage{amsmath,amsthm,amsfonts,amssymb,amscd, fancyhdr, color, comment, graphicx, environ}
 \usepackage{float}
 \usepackage{mathrsfs}
-\usepackage[math-style=ISO]{unicode-math}
-\setmathfont{TeX Gyre Termes Math}
+%\usepackage[math-style=ISO]{unicode-math}
+%\setmathfont{TeX Gyre Termes Math}
 \usepackage{lastpage}
 \usepackage[dvipsnames]{xcolor}
 \usepackage[framemethod=TikZ]{mdframed}
@@ -21,6 +21,7 @@
 \usepackage{shadethm}
 \usepackage{hyperref}
 \usepackage{setspace}
+\usepackage{multicol}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -48,19 +49,19 @@ variables alone.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Fill in the appropriate information below
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}     
-\newcommand\course{course \_ name}                      % <-- course name   
+\newcommand\course{Course Name HERE}                      % <-- course name   
 \newcommand\hwnumber{1}                         % <-- homework number
 \newcommand\Information{XXX/xxxxxxxx}           % <-- personal information
-\newcommand\auther{Hao Jerry Fang} 
+\newcommand\auther{YOUR NAME HERE} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Page setup
 \pagestyle{fancy}
 \headheight 35pt
 \lhead{\today} % <-- school logo(please upload the file first, then change the name here)
+\chead{\course}
+\rhead{Page \thepage \ of \pageref{LastPage}}
 \lfoot{}
-\pagenumbering{arabic}
-\cfoot{\small\thepage}
 \rfoot{}
 \headsep 1.2em
 \renewcommand{\baselinestretch}{1.25}       
