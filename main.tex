@@ -49,19 +49,22 @@ variables alone.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Fill in the appropriate information below
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}     
-\newcommand\course{Course Name HERE}                      % <-- course name   
+\newcommand\course{Course Name Here}                      % <-- course name  
+\newcommand\courseTile{Course Title Here} % <-- course title
 \newcommand\hwnumber{1}                         % <-- homework number
 \newcommand\Information{XXX/xxxxxxxx}           % <-- personal information
-\newcommand\auther{YOUR NAME HERE} 
+\newcommand\auther{Your Name Here} 
+\newcommand\instructor{instructor}           % <--instructor 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Page setup
 \pagestyle{fancy}
 \headheight 35pt
-\lhead{\today} % <-- school logo(please upload the file first, then change the name here)
-\chead{\course}
+\lhead{\today} % today's date 
+\chead{\course \ Homework \hwnumber}
 \rhead{Page \thepage \ of \pageref{LastPage}}
 \lfoot{}
+\cfoot{}
 \rfoot{}
 \headsep 1.2em
 \renewcommand{\baselinestretch}{1.25}       
@@ -78,6 +81,7 @@ innertopmargin=\topskip,
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\R}{\mathbb R}
 \newcommand{\Q}{\mathbb Q}
+\newcommand{\PP}{\mathbb P}
 \newcommand{\NN}{\mathbb N}
 \DeclareMathOperator{\Mod}{Mod} 
 \renewcommand\lstlistingname{Algorithm}
@@ -93,30 +97,39 @@ innertopmargin=\topskip,
 
 \begin{titlepage}
     \begin{center}
-        \vspace*{3cm}
-            
-        \Huge
-        \textbf{\course}
-            
+        \  
         \vspace{1cm}
+    
+        \includegraphics[width=0.7\textwidth]{GT_logo3.png}
+        
+        \vspace{2cm}
+            
+        \huge
+        \textbf{\course} 
+        
+        \vspace{0.2cm}
+        
+        \LARGE
+        \textbf{\courseTile}
+            
+        \vspace{1.5cm}
         \huge
         Homework \hwnumber
             
         \vspace{1.5cm}
-        \Large
+        \LARGE
             
         \textbf{\auther}                      % <-- author
         
-            
-        \vfill
+        \vspace{5cm}
         
-        A \course \ Homework Assignment
+        Instructor: \instructor
+        
+        %A \course \ Homework Assignment
             
         \vspace{.5cm}
             
-        \includegraphics[width=0.4\textwidth]{GT_logo3.png}
-        \\
-        
+        \rfoot{}
         \Large
         
         \today
